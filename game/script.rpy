@@ -11,22 +11,23 @@ label start:
     play music "audio/bgm_village_dance.mp3" fadein 1.0 volume 0.5
     "During the War of the Spanish Succession…"
     scene bg road
+    show eugene smile
     "Eugene" "Greetings! I am Eugene of Savoy, but you may call me Eugene."
     "Eugene" "I'm afraid that war has once again found the  \"Hasburg Empire\"."
 label sprites:
     "Eugene"  "But wait, who are you?"
-    show zeil delighted
+    show eugene delighted
     "Eugene"  "Oh! You're from a diplomatic delegation!"
-    show zeil angry
+    show eugene angry
     "Eugene" "Please excuse my brusqueness."
     show extra normal at right
     "Austrian Soldier" "Sir..."
     hide extra
     "Eugene" "..."
 label character:
-    show zeil bored
+    show eugene bored
     "Eugene" "Well, this is no way to treat such an important man."
-    show zeil smile2 with dissolve
+    show eugene smile with dissolve
     "Eugene" "I want the proud colors of the Habsburgs on display!"
     Eugene "Wonderful!"    
 label background:
@@ -34,7 +35,7 @@ label background:
     scene bg town
     with fade
     
-    show zeil smile2 at left
+    show eugene smile at left
     Eugene "It seems we've arrived earlier than expected!"  
 label bgm:
     play music "audio/bgm_air.mp3" fadein 1.0 volume 0.5
@@ -59,13 +60,13 @@ menu:
     "I have my doubts about an alliance for now. I need more time to think about it.":
         jump choices1_b
 label choices1_a:
-    show zeil delighted
+    show eugene delighted
     Eugene "Good man!"
     $ learned = True
     jump choices1_common
 
 label choices1_b:
-    show zeil annoyed
+    show eugene annoyed
     Eugene "Very well. Austria will not force war upon you, but the French very much will."
     jump choices1_common
 
