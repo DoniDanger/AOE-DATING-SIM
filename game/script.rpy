@@ -8,12 +8,18 @@ default Zeil = Character('Zeil', color="#E03B8B")
 
 # The game starts here.
 label start:
-    play music "audio/bgm_village_dance.mp3" fadein 1.0 volume 0.5
-    "During the War of the Spanish Succession…"
+    play music "audio/bgm_village_dance.mp3" fadein 1.0 volume 0.4
+    "November 1st, 1700."
+    "Charles II of Spain has died..."
+    "... and Europe is now on the brink of war!"
+    "The major powers watch in anticipation as the French and Habsburg realms struggle over the succession of the heirless Charles II."
+    play sound "audio/sfx_wagon_wheels.mp3"
     scene bg road
-    show eugene smile
-    "Eugene" "Greetings! I am Eugene of Savoy, but you may call me Eugene."
-    "Eugene" "I'm afraid that war has once again found the  \"Hasburg Empire\"."
+    "With a European war on the horizon, the king in Prussia has decided to send a delegation to the Habsburgs."
+    "Unfortunately, it seems that I'm the delegate in charge of the negotiations."
+    play sound "audio/sfx_wagon_wheels.mp3"
+    Eugene "Greetings! I am Eugene of Savoy, but you may call me Eugene."
+    Eugene "I'm afraid that war has once again found the  \"Habsburg Empire\"."
 label sprites:
     "Eugene"  "But wait, who are you?"
     show eugene delighted
@@ -38,7 +44,7 @@ label background:
     show eugene smile at left
     Eugene "It seems we've arrived earlier than expected!"  
 label bgm:
-    play music "audio/bgm_air.mp3" fadein 1.0 volume 0.5
+    play music "audio/bgm_air.mp3" fadein 1.0 volume 0.2
     Eugene "Oh, the musicians are playing baroque?"
     Eugene "It's too ghastly for my tastes. I'm afraid I'll have to meet you somewhere else it seems."
     
@@ -47,7 +53,7 @@ label bgm:
     with fade
     
 label sfx:
-    play sound "audio/bgm_flute_concerto.mp3"
+    play music "audio/bgm_flute_concerto.mp3" fadein 1.0 volume 0.2
     Eugene "Oh, is it already time for our meeting?"
 
 
